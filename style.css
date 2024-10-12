@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e6e6;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.profile-card {
+    display: flex;
+    width: 800px;
+    border: 2px solid #d1d1d1;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.profile-left {
+    background-color: #8a4af3;
+    color: white;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+.profile-left .back-button, .profile-left .settings-button {
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.profile-left .back-button {
+    left: 20px;
+}
+.profile-left .settings-button {
+    right: 20px;
+}
+.profile-left img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.profile-left h2 {
+    margin: 10px 0;
+}
+.profile-left p {
+    margin: 5px 0;
+}
+.profile-left .stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.profile-left .stats div {
+    text-align: center;
+}
+.profile-left .stats div i {
+    display: block;
+    margin-bottom: 5px;
+}
+.profile-left .follow-button {
+    background-color: #f4c542;
+    color: #8a4af3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.profile-right {
+    padding: 20px;
+    width: 60%;
+}
+.profile-right .follow-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-right .follow-item img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.profile-right .follow-item .follow-info {
+    display: flex;
+    align-items: center;
+}
+.profile-right .follow-item .follow-info div {
+    margin-left: 10px;
+}
+.profile-right .follow-item .follow-info div p {
+    margin: 0;
+}
+.profile-right .follow-item .follow-button {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.profile-right .follow-item .follow-button.following {
+    background-color: #8a4af3;
+    color: white;
+}
+.profile-right .follow-item .follow-button.follow {
+    background-color: #d1d1d1;
+    color: white;
+}
